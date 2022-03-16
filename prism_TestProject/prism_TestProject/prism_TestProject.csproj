@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.3.2" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
+    <PackageReference Include="Xamarin.Forms.Breadcrumb" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\BPage.xaml.cs">
+      <DependentUpon>BPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\APage.xaml.cs">
+      <DependentUpon>APage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
